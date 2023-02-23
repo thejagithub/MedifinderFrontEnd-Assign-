@@ -66,7 +66,7 @@ class App extends Component {
           <Link to={"/"} className="navbar-brand">
             MediFinder
           </Link>
-          <div className="navbar-nav mr-auto navbar-nav-light  ">
+          <div className="navbar-nav mr-auto navbar-nav-secondary">
             <li className="nav-item  ">
               <Link to={"/home"} className="nav-link">
                 Home
