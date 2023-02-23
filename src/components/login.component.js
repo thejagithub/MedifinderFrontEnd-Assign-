@@ -85,12 +85,12 @@ class Login extends Component {
     return (
       <div className="col-md-12 align-items-center">
 
-<ul className="nav nav-tabs ">
+{/* <ul className="nav nav-tabs ">
   <li className="nav-item">
     <a className="nav-link active" aria-current="page" href="#">Log-In for Users and Companies</a>
   </li>
   
-</ul>
+</ul> */}
         <div className="card card-container">
           <img
             src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"

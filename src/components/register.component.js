@@ -3,6 +3,7 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import AuthService from "../services/auth.service";
 
@@ -126,14 +127,14 @@ export default class Register extends Component {
       
       <div className="col-md-12">
 
-<ul className="nav nav-tabs ">
+{/* <ul className="nav nav-tabs ">
   <li className="nav-item">
     <a className="nav-link active" aria-current="page" href="#">Sign-Up for Users</a>
   </li>
   <li className="nav-item">
     <a className="nav-link" href="#">Sign-Up for Companies</a>
   </li>
-</ul>
+</ul> */}
 
 
 
@@ -199,6 +200,22 @@ export default class Register extends Component {
                     validations={[required, vpassword]}
                   />
                   </div>
+
+                  <div className="form-group">
+                  <Dropdown>
+                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                   Role
+                  </Dropdown.Toggle>
+
+                    <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">User</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Company</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Admin</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Moderator</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>   
+
+                   </div>
 
     
 

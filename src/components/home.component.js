@@ -36,17 +36,17 @@ export default class Home extends Component {
   render() {
     return (
       <div className="container3">
-        <header className="jumbotron">
-          <h3 class="text-center">
+        {/* <header className="jumbotron">
+          <h3 class="text-center"> */}
             {/* {this.state.content} */}
-          Welcome to MediFinder
+          {/* Welcome to MediFinder
           
-          </h3>
-          <Row> 
+          </h3> */}
+          {/* <Row> 
             <Col>
       <Card style={{ width: '30rem' }}>
       {/* <Card.Img variant="top" src="holder.js/100px180?text=Image cap" /> */}
-      <Card.Body>
+      {/* <Card.Body>
         <Card.Title> About MediFinder</Card.Title>
         <Card.Text>
           Medifinder is the Sri Lanka's first ever application build to assist with finding medicines.
@@ -61,12 +61,12 @@ export default class Home extends Component {
         <ListGroup.Item>Easy registration and login</ListGroup.Item>
         <ListGroup.Item>Integrated and collaborated with reputed medical companies</ListGroup.Item>
       </ListGroup>
-      <Card.Body>
+      <Card.Body> */}
         {/* <Card.Link href="#">log-in now</Card.Link>
         <Card.Link href="#">new user? click here</Card.Link> */}
-      </Card.Body>
+      {/* </Card.Body>
     </Card>
-    </Col>
+    </Col> */} 
     
      {/* <Col>
     <Card style={{ width: '18rem' }}>
@@ -111,8 +111,45 @@ export default class Home extends Component {
       </Card.Body>
     </Card>
     </Col>  */}
-    </Row>
-     </header>
+    {/* </Row> */}
+     {/* </header> */}
+
+     <section className="page-section" id="services">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-12 text-center">
+          <h2 className="section-heading text-uppercase">Services</h2>
+          <h3 className="section-subheading text-muted">We provide you the best service available at the market.</h3>
+        </div>
+      </div>
+      <div className="row text-center">
+        <div className="col-md-4">
+          <span className="fa-stack fa-4x">
+            <i className="fa fa-circle fa-stack-2x text-primary"></i>
+            <i className=" fa fa-map-marker  fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 className="service-heading">QUICKLY AND EASILY FIND MEDICINES</h4>
+          <p className="text-muted">Finding medicines has never been so simple. Search by medicine name or search by your location.</p>
+        </div>
+        <div className="col-md-4">
+          <span className="fa-stack fa-4x">
+            <i className="fa fa-circle fa-stack-2x text-primary"></i>
+            <i className="fa fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 className="service-heading">EASY REGISTRATION AND LOGIN</h4>
+          <p className="text-muted">Register to the application to get exclusive offers and many more.</p>
+        </div>
+        <div className="col-md-4">
+          <span className="fa-stack fa-4x">
+            <i className="fa fa-circle fa-stack-2x text-primary"></i>
+            <i className="fa fa-user-md fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 className="service-heading">REPUTED MEDICAL COMPANIES</h4>
+          <p className="text-muted">At this time, a lot of medical companies have joined forces with us. And a lot of other companies want to join with us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
        </div>
 
     );
