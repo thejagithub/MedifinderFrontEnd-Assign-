@@ -49,7 +49,7 @@ label {
 }
 
 .card {
-  background-color: #3e3eba;
+  background-color: #fafaff;
   padding: 10px 25px 30px;
   margin: 0 auto 25px;
   margin-top: 50px;
@@ -152,5 +152,12 @@ label {
   border-radius: 25px;
 }
 
+.leaflet-container{
+  height: 300px;
+  width: 100%;
+}
+.btn-secondary {
 
+  margin-bottom: 27px;
+}
 

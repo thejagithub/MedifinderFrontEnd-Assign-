@@ -4,6 +4,7 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
 import Dropdown from 'react-bootstrap/Dropdown';
+import MarkersMap from "./map.components/currentLocation";
 
 import AuthService from "../services/auth.service";
 
@@ -202,8 +203,14 @@ export default class Register extends Component {
                   </div>
 
                   <div className="form-group">
+                  <label htmlFor="location">Enter your location below</label>
+
+                  <MarkersMap/>
+                  </div>
+
+                  <div className="form-group">
                   <Dropdown>
-                  <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  <Dropdown.Toggle variant="body" id="dropdown-basic">
                    Role
                   </Dropdown.Toggle>
 
@@ -216,6 +223,8 @@ export default class Register extends Component {
               </Dropdown>   
 
                    </div>
+
+                   
 
     
 
